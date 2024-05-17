@@ -1,5 +1,3 @@
-In this README file, you will find a project overview, parts of the requirements expressed in text, and more.
-
 ### Project Overview:
 
 The objective was to create a multitask learning model trained on the [UTKFaces dataset](https://www.kaggle.com/jangedoo/utkface-new). The classification goals were to predict the Age and Gender of individuals in the photographs. The dataset comprised over 23,000 images.
@@ -61,38 +59,27 @@ Explanation of tensorboard models.
 
 *1. benchmark_classifier_regression/version_0* - totals loss calculated as simple sum of age and gender loss, no weights
 
-Notebook name: Benchmark model 1
+Name of this model in the notebook: Benchmark model 1
 
 *2. benchmark_classifier_regression/version_1* - same mode, asabove just have * 0.001 to age loss in order to compare them more intuitively.
 
-Notebook name: Benchmark model 2
+Name of this model in the notebook: Benchmark model 2
 
 *3. STROONG_second/version_0* - This is where AdamW instead of Adam was introduced, also lr was changed and weight decay was added.
 
 STROONG_second/version_2 - another run of the same model.
 
-Notebook name: Benchmark model 3
+Name of this model in the notebook: Benchmark model 3
 
-
-*4. MAE_post_benchmark_final/version_0* - Where I changed to MAE from MSE for age loss. This has 0.001 age weight. Uses Adam optimizer with lr 3e-4. Main comparison between this and first models is in terms of MAE and MSE.
-Notebook name: First model in "After benchmark models part"
-
-
-*5.final_model_max_85_for_lime/version_1.* - The model I used in LIME with age limit to 85.
-
+*4.final_model_max_85_for_lime/version_1.* - The model I used in LIME with age limit to 85.
 
 Download the face_classifier_logs.zip file. 
 
-How to run (Code for terminal): `tensorboard --logdir "path to unziped file/face_classifier_logs"`
+How to run (Code for terminal): `tensorboard --logdir "path to unziped file/face_classifier_logs`
 
-After you run this, in terminal window you will have some localhost link available to click, example : 'http://localhost:6007/' or 6006 ..
+After you run this, in terminal window you will have some localhost link available to click, example : http://localhost:6007/ or 6006 ..
 
 Note: - I used (base) conda environment to run this in, environment might differ for you.
 
 ----
-
-Note:
-
-- The notebook "MAIN" is the notebook containing all of the outlined working steps. The notebook with Failed Augmentations is also added for clarity, but is not intended as main part of the project.
-
 License: MIT License
